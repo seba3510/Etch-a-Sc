@@ -168,4 +168,44 @@ function addTrail(cell) {
 
 
 
+
+
 handleMouseHover();
+
+
+//=========================================================================================================================
+
+
+function promptSquaresPerGrid() {
+
+
+
+
+    let squares = prompt("How many squares per side should your grid be?");
+
+
+    checkSize(squares);
+
+
+
+
+
+
+
+} // promptSquaresPerGrid()
+
+
+
+
+function checkSize(size) {
+
+    if ((size > 100)) {
+        alert("Grid size cannot exceed 100px!");
+        return;
+    }
+} // checkSize()
+
+
+
+
+// promptSquaresPerGrid();

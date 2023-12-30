@@ -21,3 +21,24 @@
   margin-right: 5px;
   cursor: pointer;
 }
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+
+  text-align: center;
+  font-size: 75px;
+  margin-top: 100px;
+
+
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 150px;
+}
