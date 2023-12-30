@@ -28,7 +28,7 @@ This project was developed as part of The Odin Project's JavaScript course
 
 - ## Demo
 
-[Live Demo](https://seba3510.github.io/Rock-Paper-Scissors/)
+[Live Demo](https://seba3510.github.io/Etch-a-Sketch/)
 
 ## Technologies Used
 
