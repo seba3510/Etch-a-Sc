@@ -105,3 +105,67 @@ function makeColumns(numCells) {
 
 // Call the defaultGrid function to create the initial grid
 defaultGrid();
+
+
+
+
+
+//=========================================================================================================================
+/**
+ * Represents a collection of all elements with the class "cell" in the document.
+ * @type {NodeListOf<Element>}
+ */
+const cells = document.querySelectorAll(".cell");
+
+//=========================================================================================================================
+
+
+/**
+ * Handles mouse hover events on cells and adds a yellow trail.
+ * Loops through each cell and adds the hover event listener.
+ */
+function handleMouseHover() {
+
+    /**
+     * The total number of cells in the collection.
+     * @type {number}
+     */
+    let n = cells.length;
+
+    // Iterate over each cell in the collection
+    for (let i = 0; i < n; i++) {
+        /**
+         * Represents an individual cell in the grid.
+         * @type {Element}
+         */
+        let cell = cells[i];
+
+        // Attach the addTrail function to the mouseover event of the cell
+        addTrail(cell);
+    } //for()
+} // handleMouseHover()
+
+
+//=========================================================================================================================
+
+
+/**
+ * Adds a yellow trail effect to the cell when the mouse hovers over it.
+ *
+ * @param {Element} cell - The cell element to which the trail is added.
+ */
+function addTrail(cell) {
+
+    // Add a mouseover event listener to the cell
+    cell.addEventListener("mouseover", () => {
+        // Change the background color to yellow on mouseover
+        cell.style.backgroundColor = "yellow";
+    });
+}// addTrail()
+
+
+//=========================================================================================================================
+
+
+
+handleMouseHover();
